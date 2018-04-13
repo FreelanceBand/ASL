@@ -1,3 +1,177 @@
+.hide-on-mobile {
+    display: inherit !important;
+}
+
+.hide-on-desktop {
+    display: none !important;
+}
+
+h1, h2, h3 {
+    font-family: 'Open Sans', sans-serif;
+    color: #000;
+    font-weight: bold;
+}
+
+body {
+    padding: 0 calc((100% - 1120px) / 2);
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+header {
+    margin-bottom: 1.5em;
+}
+
+header > .extra-line {
+    font-size: 11px;
+    margin-bottom: 1.7em;
+    padding: 7px 20px;
+}
+
+header > .extra-line > * {
+    display: inline;
+    position: relative;
+    height: 16px;
+    line-height: 16px;
+    color: #000;
+    margin-right: 14px;
+}
+
+header > .extra-line > *:after {
+    content: '|';
+    position: absolute;
+    right: -10px;
+    top: 0;
+    font-size: 1.2em;
+    display: inline-block;
+    color: #FFF;
+    cursor: default;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+header a:link, header a:visited {
+    color: #333;
+    text-decoration: none;
+}
+
+header > .extra-line > *:last-child:after {
+    display: none;
+}
+
+header > .extra-line > * > img {
+    height: 100%;
+}
+
+header > .line {
+    background: transparent;
+    padding: 0 10px;
+}
+
+.menu-button {
+    display: none !important;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-section {
+    background-position: center left;
+}
+
+.menu {
+    position: initial;
+    overflow: initial;
+    display: inline-block !important;
+    width: 14.5%;
+    margin: 0 1em 0 0;
+    padding: 0;
+    border-right: 1px;
+    border-right-style: solid;
+    border-right-color: #E7E7E7;
+    font-family: Arial;
+    height: 100%;
+}
+
+.menu > ul {
+    position: initial;
+    overflow: initial;
+    min-width: unset;
+}
+
+.menu > .backdrop {
+    display: none;
+}
+
+main {
+    /*width: calc(1120px - 300px);*/
+    width: 83.5%;
+    display: inline-block !important;
+}
+
+main > h1 {
+    font-size: 1.4em;
+    margin: 0 0 0px 0;
+    padding-bottom: 18px;
+    background-color: unset;
+    color: black;
+}
+
+main > hr {
+    height: 0;
+    border: none;
+    border-bottom: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #E7E7E7;
+}
+
+main .page-sections-links {
+    margin-top: 20px;
+    margin-left: 0px;
+    padding: 0;
+}
+
+main .page-sections-links > * {
+    display: inline !important;
+    line-height: 1.9em;
+    margin-right: 6px;
+    padding: 0;
+    border-bottom: none;
+}
+
+main .page-sections-links a {
+    font-size: 12px;
+    color: #000;
+    text-decoration: none;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #CCC;
+    margin-right: 20px;
+    padding-bottom: 1px;
+    padding-left: 15px;
+    background-color: unset;
+    border-radius: unset;
+}
+
+main .page-sections-links a:before {
+    left: 0;
+    top: calc((100% - 1.3rem) / 2);
+}
+
+main > section > .links-list {
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+main > section > .links-list > li {
+    display: block;
+    margin-bottom: 10px;
+    border: none;
+    padding: unset;
+    margin-right: 20px;
+}
+
 main > section > .links-list > li > span {
     margin-left: 10px;
 }
@@ -7,14 +181,162 @@ main > section > .links-list > li > span:before {
     margin-right: 10px;
 }
 
-.hide-on-mobile {
-    display: inherit !important;
+main > section > .links-list > li > span, main > section > .links-grid ul > li > span {
+    display: initial;
+    padding: unset;
+    margin-left: 10px;
 }
 
-.hide-on-desktop {
-    display: none !important;
+main > section > .links-list > li.desktop-only:after, main > section > .links-grid ul > li.desktop-only:after {
+    display: none;
+}
+
+main > section > .links-grid ul > li {
+    border: unset;
+}
+
+main > section > .links-list a, main > section > .links-grid a {
+    text-decoration: none;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #9999ff;
+}
+
+main > section > h2 {
+    background-color: unset;
+    font-weight: bold;
+    font-size: 1.4em;
+    margin: 24px 0 12px 0;
+}
+
+main > section > .links-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main > section > .links-grid > li {
+    width: 23%;
+    margin: 1%;
+}
+
+main > section > .links-grid > li > h3 {
+    font-size: 1.1em;
+    margin: 18px 0 8px 0;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    color: #000;
+}
+
+main > section > .links-grid > li > h3 > img {
+    height: 12px;
+    margin-right: 10px;
+}
+
+main > section > h3 {
+    font-size: 1.1em;
+    margin: 18px 0 8px 0;
 }
 
 .menu h4 {
-    display: none;
+    color: transparent;
+    height: 0;
+    margin: 0.5em 0;
+}
+
+.menu .active {
+    color: #000;
+    background-color: #f8e470;
+    text-decoration: none;
+    display: block;
+    padding-left: 10px;
+    padding-top: 2px;
+    padding-bottom: 0px;
+    cursor: default;
+}
+
+.menu > ul > li:first-child > h4 {
+    margin: unset;
+    border: none;
+    height: 0;
+}
+
+.menu a {
+    color: black;
+}
+
+.language-link {
+    width: 16px;
+    height: 16px !important;
+    position: relative;
+}
+
+.language-link > img {
+    height: 100%;
+    width: 100%;
+    /*margin: 2px 0;*/
+}
+
+main > .sub-menu {
+    font-size: 0.8em;
+    margin-bottom: 36px;
+    padding-left: 0;
+    padding-top: 4px;
+    margin-left: 6px;
+
+}
+
+main > .sub-menu a:link, main > .sub-menu a:visited {
+    color: #000;
+    text-decoration: none;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #CCC;
+    margin-right: 20px;
+    padding-bottom: 1px;
+}
+
+main > .sub-menu .active {
+    background: #f8e470 none repeat scroll 0 0;
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.2) inset;
+    border-radius: 4px;
+    margin: -6px 14px -6px -6px;
+    padding: 4px 6px 4px 6px;
+    color: #000;
+    cursor: default;
+    border: none !important;
+    padding-bottom: 4px !important;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top-color: #CCC;
+}
+
+footer .social-links {
+    order: 3;
+}
+
+footer .about-links {
+    order: 1;
+}
+
+footer .banners {
+    order: 2;
+}
+
+footer .info {
+    color: #999;
+    font-size: 11px;
+    order: 4;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+
 }

@@ -7,15 +7,15 @@
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/design.css">
     <link rel="stylesheet" href="assets/css/icons.css">
-    <!--<link rel="stylesheet" href="assets/css/desktop.css" media="(min-width: 1024px)">-->
+    <link rel="stylesheet" href="assets/css/desktop.css" media="(min-width: 1024px)">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic" rel="stylesheet">
 </head>
 <body id="menu">
 <header>
     <div class="extra-line hide-on-mobile">
-        <a href="#" class="fast-link">Быстрая ставка</a>
+        <a href="#" class="fast-link dotted">Быстрая ставка</a>
         <a href="#" class="language-link"><img src="assets/images/flags/4x3/gb.svg"></a>
-        <a href="#" class="ad-link">Букмекерские конторы онлайн</a>
+        <a href="#" class="ad-link red">Букмекерские конторы онлайн</a>
         <a href="#" class="ad-link">Получи бонус 16000 рублей в Винлайн!</a>
     </div>
     <div class="line">
@@ -25,169 +25,222 @@
             <figure class="logo-section"></figure>
             <div class="info-section"></div>
         </div>
-        <div class="right-section"></div>
+        <div class="right-section">
+            <img src="assets/images/social-placeholder.png" class="social-links hide-on-mobile">
+        </div>
     </div>
 </header>
-<aside class="menu hide-on-mobile">
-    <ul>
-        <li><h4>Результаты онлайн</h4></li>
-        <li><a href="">Результаты онлайн</a></li>
-        <li><a href="">ТВ Онлайн</a></li>
-        <li><a href="">Футбол онлайн</a></li>
-        <li><a href="">Букмекерские конторы</a></li>
-        <li><a href="">Обзоры букмекеров</a></li>
-        <li><a href="">Прогнозы на спорт</a></li>
-        <li><h4>Виды спорта</h4></li>
-        <li><a href="">Футбол</a></li>
-        <li><a href="">Хоккей</a></li>
-        <li><a href="">Теннис</a></li>
-        <li><a href="">Баскетбол</a></li>
-        <li><a href="">Американский футбол</a></li>
-        <li><a href="">Бейсбол</a></li>
-        <li><a href="">Киберспорт</a></li>
-        <li><a href="">Другие виды спорта</a></li>
-        <li><a href="">Статистика спорта</a></li>
-        <li><h4>Информация</h4></li>
-        <li><a href="">Форумы</a></li>
-        <li><a href="">Порталы, сервисы</a></li>
-        <li><a href="">Блоги, новости</a></li>
-        <li><a href="">Теория игры</a></li>
-        <li><a href="">Мобильный беттинг</a></li>
-        <li><a href="">Skrill</a></li>
-    </ul>
-    <a href="#" class="backdrop">Закрыть меню</a>
-</aside>
-<main>
-    <nav class="sub-menu hide-on-mobile">
-        <a href="">Футбол</a>
-        <a href="">Теннис</a>
-        <a href="">Хоккей</a>
-        <a href="">Баскетбол</a>
-        <a href="">Формула 1</a>
-        <a href="">Другие виды спорта</a>
-    </nav>
-    <h1>Онлайн результаты футбольных матчей</h1>
-    <hr class="hide-on-mobile">
-    <div class="page-sections-links">
-        <a href="#all-championships">Все чемпионаты</a>
-        <a href="#champions-league">Лига Чемпионов, Европы</a>
-        <a href="#countries">По странам</a>
-        <a href="#other">Другие сайты</a>
-    </div>
-    <section id="all-championships">
-        <h2>Прямые трансляции, топ сайты</h2>
-        <ul class="links-list">
-            <li class="desktop-only"><img src="assets/images/logo.png"><a
-                    href="">Futbol24</a><span>самый быстрый сайт с трансляциями онлайн</span></li>
-            <li><img src="assets/images/logo.png"><a href="">MyScore</a><span>результаты, статистика матча онлайн</span>
-            </li>
-            <li><img src="assets/images/logo.png"><a
-                    href="">Livescore.com</a><span>футбол онлайн, самый известный сайт</span></li>
-            <li class="desktop-only"><img src="assets/images/logo.png"><a href="">Soccerstand</a><span>трансляции матчей онлайн</span>
-            </li>
-            <li><img src="assets/images/logo.png"><a href="">Xscores</a><span>результаты онлайн</span></li>
-            <li><img src="assets/images/logo.png"><a href="">ESPN Live</a><span>отличный лайв, комментарии, статистика онлайн</span>
-            </li>
-            <li class="desktop-only"><img src="assets/images/logo.png"><a href="">Livescore.in</a><span>результаты матчей онлайн</span>
-            </li>
-            <li class="desktop-only"><img src="assets/images/logo.png"><a
-                    href="">Liveresult</a><span>прямые трансляции</span></li>
-            <li><img src="assets/images/logo.png"><a href="">UEFA</a><span>прямые футбольные трансляции</span></li>
+<div class="content-wrapper">
+    <aside class="menu hide-on-mobile">
+        <ul>
+            <li><h4>Результаты онлайн</h4></li>
+            <li><a href="" class="active">Результаты онлайн</a></li>
+            <li><a href="">ТВ Онлайн</a></li>
+            <li><a href="">Футбол онлайн</a></li>
+            <li><a href="">Букмекерские конторы</a></li>
+            <li><a href="">Обзоры букмекеров</a></li>
+            <li><a href="">Прогнозы на спорт</a></li>
+            <li><h4>Виды спорта</h4></li>
+            <li><a href="">Футбол</a></li>
+            <li><a href="">Хоккей</a></li>
+            <li><a href="">Теннис</a></li>
+            <li><a href="">Баскетбол</a></li>
+            <li><a href="">Американский футбол</a></li>
+            <li><a href="">Бейсбол</a></li>
+            <li><a href="">Киберспорт</a></li>
+            <li><a href="">Другие виды спорта</a></li>
+            <li><a href="">Статистика спорта</a></li>
+            <li><h4>Информация</h4></li>
+            <li><a href="">Форумы</a></li>
+            <li><a href="">Порталы, сервисы</a></li>
+            <li><a href="">Блоги, новости</a></li>
+            <li><a href="">Теория игры</a></li>
+            <li><a href="">Мобильный беттинг</a></li>
+            <li><a href="">Skrill</a></li>
         </ul>
-    </section>
-    <section id="champions-league">
-        <h2>Лига Чемпионов, Лига Европы</h2>
-        <ul class="links-list">
-            <li><img src="assets/images/logo.png"><a href="">Лига Чемпионов</a><span>официальные трансляции Лиги Чемпионов</span>
-            </li>
-            <li><img src="assets/images/logo.png"><a href="">Лига
-                Европы</a><span>официальные трансляции Лиги Европы</span></li>
-        </ul>
-    </section>
-    <section id="countries">
-        <h2>Прямые трансляции по странам, со статистикой онлайн</h2>
-        <ul class="links-grid">
-            <li>
-                <h3 class="icon england">Англия</h3>
-                <ul>
-                    <li><img src="assets/images/logo.png"><a href="">PremierLeague</a></li>
-                    <li><img src="assets/images/logo.png"><a href="">ESPN Premier League</a></li>
-                </ul>
-            </li>
-            <li>
-                <h3 class="icon germany">Германия</h3>
-                <ul>
-                    <li><img src="assets/images/logo.png"><a href="">Bundesliga</a></li>
-                    <li><img src="assets/images/logo.png"><a href="">Sport.de</a></li>
-                    <li><img src="assets/images/logo.png"><a href="">ESPN Bundesliga</a></li>
-                </ul>
-            </li>
-            <li>
-                <h3 class="icon spain">Испания</h3>
-                <ul>
-                    <li><img src="assets/images/logo.png"><a href="">LFP.es</a></li>
-                    <li><img src="assets/images/logo.png"><a href="">ESPN Primera</a></li>
-                    <li><img src="assets/images/logo.png"><a href="">MARCA</a><span>La Liga</span></li>
-                    <li><img src="assets/images/logo.png"><a href="">MARCA</a><span>2й див.</span></li>
-                </ul>
-            </li>
-            <li>
-                <h3 class="icon italy">Италия</h3>
-                <ul>
-                    <li><img src="assets/images/logo.png"><a href="">ESPN</a></li>
-                    <li><img src="assets/images/logo.png"><a href="">Gazzetta</a></li>
-                </ul>
-            </li>
-            <li>
-                <h3 class="icon france">Франция</h3>
-                <ul>
-                    <li><img src="assets/images/logo.png"><a href="">Football 365</a></li>
-                    <li><img src="assets/images/logo.png"><a href="">ESPN League 1</a></li>
-                    <li><img src="assets/images/logo.png"><a href="">L'Equipe</a></li>
-                </ul>
-            </li>
-            <li>
-                <h3 class="icon portugal">Португалия</h3>
-                <ul>
-                    <li><img src="assets/images/logo.png"><a href="">Desporto</a></li>
-                    <li><img src="assets/images/logo.png"><a href="">SegundaLiga</a></li>
-                    <li class="desktop-only"><img src="assets/images/logo.png"><a href="">Телетекст</a></li>
-                </ul>
-            </li>
-        </ul>
-    </section>
-    <section id="other">
-        <h2>Другие сайты</h2>
-        <h3>Информация о ТВ трансляциях матчей</h3>
-        <ul class="links-list">
-            <li class="desktop-only"><a href="">Goalzz</a><span>онлайн результаты и информация о трансляциях</span></li>
-            <li><a href="">Goal.cc</a><span>информация о транслируемых матчах</span></li>
-        </ul>
-        <h3>Другие сайты с трансляциями футбола</h3>
-        <ul class="links-list">
-            <li><a href="">Scorescentre</a></li>
-            <li><a href="">GoalsLive</a><span>европейские чемпионаты</span></li>
-            <li><a href="">Livesport 24</a></li>
-            <li><a href="">DirettaGol</a></li>
-            <li><a href="">BeSoccer</a></li>
-            <li><a href="">GoalWire</a></li>
-            <li class="desktop-only"><a href="">ExactScores</a></li>
-        </ul>
-    </section>
-</main>
+        <a href="#" class="backdrop">Закрыть меню</a>
+    </aside>
+    <main>
+        <nav class="sub-menu hide-on-mobile">
+            <a href="" class="active">Футбол</a>
+            <a href="">Теннис</a>
+            <a href="">Хоккей</a>
+            <a href="">Баскетбол</a>
+            <a href="">Формула 1</a>
+            <a href="">Другие виды спорта</a>
+        </nav>
+        <h1>Онлайн результаты футбольных матчей</h1>
+        <hr class="hide-on-mobile">
+        <div class="page-sections-links">
+            <a href="#all-championships">Все чемпионаты</a>
+            <a href="#champions-league">Лига Чемпионов, Европы</a>
+            <a href="#countries">По странам</a>
+            <a href="#other">Другие сайты</a>
+        </div>
+        <section id="all-championships">
+            <h2>Прямые трансляции, топ сайты</h2>
+            <ul class="links-list">
+                <li class="desktop-only"><img src="assets/images/logo.png"><a
+                        href="">Futbol24</a><span>самый быстрый сайт с трансляциями онлайн</span></li>
+                <li><img src="assets/images/logo.png"><a
+                        href="">MyScore</a><span>результаты, статистика матча онлайн</span>
+                </li>
+                <li><img src="assets/images/logo.png"><a
+                        href="">Livescore.com</a><span>футбол онлайн, самый известный сайт</span></li>
+                <li class="desktop-only"><img src="assets/images/logo.png"><a href="">Soccerstand</a><span>трансляции матчей онлайн</span>
+                </li>
+                <li><img src="assets/images/logo.png"><a href="">Xscores</a><span>результаты онлайн</span></li>
+                <li><img src="assets/images/logo.png"><a href="">ESPN Live</a><span>отличный лайв, комментарии, статистика онлайн</span>
+                </li>
+                <li class="desktop-only"><img src="assets/images/logo.png"><a href="">Livescore.in</a><span>результаты матчей онлайн</span>
+                </li>
+                <li class="desktop-only"><img src="assets/images/logo.png"><a
+                        href="">Liveresult</a><span>прямые трансляции</span></li>
+                <li><img src="assets/images/logo.png"><a href="">UEFA</a><span>прямые футбольные трансляции</span></li>
+            </ul>
+        </section>
+        <section id="champions-league">
+            <h2>Лига Чемпионов, Лига Европы</h2>
+            <ul class="links-list">
+                <li><img src="assets/images/logo.png"><a href="">Лига Чемпионов</a><span>официальные трансляции Лиги Чемпионов</span>
+                </li>
+                <li><img src="assets/images/logo.png"><a href="">Лига
+                    Европы</a><span>официальные трансляции Лиги Европы</span></li>
+            </ul>
+        </section>
+        <section id="countries">
+            <h2>Прямые трансляции по странам, со статистикой онлайн</h2>
+            <ul class="links-grid">
+                <li>
+                    <h3><img src="assets/images/flags/4x3/gb.svg">Англия</h3>
+                    <ul>
+                        <li><img src="assets/images/logo.png"><a href="">PremierLeague</a></li>
+                        <li><img src="assets/images/logo.png"><a href="">ESPN Premier League</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h3><img src="assets/images/flags/4x3/gb.svg">Германия</h3>
+                    <ul>
+                        <li><img src="assets/images/logo.png"><a href="">Bundesliga</a></li>
+                        <li><img src="assets/images/logo.png"><a href="">Sport.de</a></li>
+                        <li><img src="assets/images/logo.png"><a href="">ESPN Bundesliga</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h3><img src="assets/images/flags/4x3/gb.svg">Испания</h3>
+                    <ul>
+                        <li><img src="assets/images/logo.png"><a href="">LFP.es</a></li>
+                        <li><img src="assets/images/logo.png"><a href="">ESPN Primera</a></li>
+                        <li><img src="assets/images/logo.png"><a href="">MARCA</a><span>La Liga</span></li>
+                        <li><img src="assets/images/logo.png"><a href="">MARCA</a><span>2й див.</span></li>
+                    </ul>
+                </li>
+                <li>
+                    <h3><img src="assets/images/flags/4x3/gb.svg">Италия</h3>
+                    <ul>
+                        <li><img src="assets/images/logo.png"><a href="">ESPN</a></li>
+                        <li><img src="assets/images/logo.png"><a href="">Gazzetta</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h3><img src="assets/images/flags/4x3/gb.svg">Франция</h3>
+                    <ul>
+                        <li><img src="assets/images/logo.png"><a href="">Football 365</a></li>
+                        <li><img src="assets/images/logo.png"><a href="">ESPN League 1</a></li>
+                        <li><img src="assets/images/logo.png"><a href="">L'Equipe</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h3><img src="assets/images/flags/4x3/gb.svg">Португалия</h3>
+                    <ul>
+                        <li><img src="assets/images/logo.png"><a href="">Desporto</a></li>
+                        <li><img src="assets/images/logo.png"><a href="">SegundaLiga</a></li>
+                        <li class="desktop-only"><img src="assets/images/logo.png"><a href="">Телетекст</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section id="other">
+            <h2>Другие сайты</h2>
+            <h3>Информация о ТВ трансляциях матчей</h3>
+            <ul class="links-list row">
+                <li class="desktop-only"><a href="">Goalzz</a><span>онлайн результаты и информация о трансляциях</span>
+                </li>
+                <li><a href="">Goal.cc</a><span>информация о транслируемых матчах</span></li>
+            </ul>
+            <h3>Другие сайты с трансляциями футбола</h3>
+            <ul class="links-list row">
+                <li><a href="">Scorescentre</a></li>
+                <li><a href="">GoalsLive</a><span>европейские чемпионаты</span></li>
+                <li><a href="">Livesport 24</a></li>
+                <li><a href="">DirettaGol</a></li>
+                <li><a href="">BeSoccer</a></li>
+                <li><a href="">GoalWire</a></li>
+                <li class="desktop-only"><a href="">ExactScores</a></li>
+            </ul>
+        </section>
+    </main>
+</div>
 <footer>
     <div class="social-links">
         <a href=""></a>
     </div>
-    <div class="column">
-        <a href="">Полная версия сайта</a>
+    <div class="column about-links">
+        <a href="">Мобильная версия сайта</a>
         <a href="">О сайте</a>
     </div>
-    <div class="banners">
-
+    <div class="banners row" style="width: 50%;justify-content: space-between;">
+        <div style="background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAgCAMAAACrZuH4AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpkYmY5ODY2Ni1hODU3LTgwNDQtYTUwYS04OTY4NjcwMzljN2YiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RTIzRkQ1MTFCRTA1MTFFN0E2Q0ZGQTA5QUJBOEM1QzYiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RTIzRkQ1MTBCRTA1MTFFN0E2Q0ZGQTA5QUJBOEM1QzYiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6ZGJmOTg2NjYtYTg1Ny04MDQ0LWE1MGEtODk2ODY3MDM5YzdmIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOmRiZjk4NjY2LWE4NTctODA0NC1hNTBhLTg5Njg2NzAzOWM3ZiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pp+YaQkAAAMAUExURdowJdI8LP318eSUe/3ZyPe9puWZgf3p4NhXPulBKuQ6KOpyUuyDZPBMMO1UNvFcO9Y2KPve0PTPv/SihdxqUP7s4+5ILuhHL+qiifedfdE5K/bBq/anivzOuehIL+NlSeySddhQOfzo3u2VeexkRNw8K+VJMf7x68wsJfKegfrCq+SLcPW1neWJbuVaPvLEsew9KdpBLeo4J+hzVO9EK9Q6K+1KMPB1U+ZkRtNJNOpqS+mOctk2KPSkh9s6KvGWd+5MMOuHadU/Lf3y7c40KP7t5NRFMe1XOO10U88uJeQ2JvBJL/vGr9UxJ9c/Leg2JuQ+Ku9DK/mukfmrjuaeh+xTNetSNPKOb/ONbe+LbPOCYfLNvtE3Kuk+KeIrI+FWPNk+LOQ5J/myl+IyJedMMu5GLu5FLOtAKuo9KOg8KOM8Kdg8K947KeVuUO9RM+9GLelFLe9BKtwyJskXHv///+5LMOxKL/BLMN1CLulJL9lALd5CLu5KMPzKtd9ELuRGL+BELuNGLuVHL+ZHL+JFL//9/eE6KN06KuRELv/8+vzKtO6ih+xzU+8+Kec+KuxCK/zk2fSIZ/CMbd1BLeI3J+A3KPOvlfCXeP/7+PbKt/OObt43KOeLb/F5WNUnIvKzmv7u5es/KutMMfzMt+A/LO+oj/Swl/vu5+KFa+50VP/+/vvIsu2pkfnLt+k7KOJcQOw7KPOAXvzbzfSsktdBLvafgOVELfq3nPzn3e5JL/XTxP/49fHKuuGAZvfNvPSJaO9wTv/39O+/rfWRcOiijOuljexoSNpONuuJa/Ksku9OMelGLfKpj+tGLe2ZfutGLtspI+1AKv3Xxvjbz9szJ+1YOeyNcPvj2OFPNf3v5/eXd+ymjf7v5/rg0+6xm/7i1Nc9LNY8K/jQvuhXOutuTt5BLuk/KvrZy8woJO57W+iPdON0WOhwUuZ1WO5HLt09K+GIbuQ9KeU/KvGPcOc9KedCLNYqI9UuJfGulfCvl+E4KPji1+I7KuyJbO2KbOlKMB4oKlUAAAK3SURBVHjaYiiBAq2N5ubmKz16uIHgzZvct0thEgxQWiZ9Q3p6OuezvoCAj1l/cnJmM8xBVZF08Z1ZWVllZaV4c1N9Y0tDXfVkmBKIiuDAd2ZoKiqqfOd0wlUkFYqVYqgwrPquC1MRZPKuFJsKP1/tVrCKoEDvnRcvGhikA1XI9SVy/WmbugSi4qHnCpCK7YXe3nxR+ydOPHC+Uvxrj+YynTPX9HLAKpwYPZlXMYjyp/H23gJZyB5W8FUG4n6l3HaICimXPQyyJuW8vZIg4QVXY4+tKinZ8dy5pGTf+8lgFYwaIQxdQBXe/Ie33ikRdfcPLynZrNZhcb1EPV7VsOqhQAyjBhtDLVAFr9gGg0sgFZolJU8SO5Lnl8yQtzNMOC7CIQVTUbqzhgWkQrikxOpT/ZSTJauAKgTulfy2fIGmwr6khCcuccrMkt3r7a7M0y9xtixmRlHxTOVmyQR7nmmdJdLt8davLpcwsX2IRlFx2v8zOCpK7t64oAyPfWQVGSqbIKIHfxRZY1WxjrWkRLrHypG9pORtxevXu0qY9oocQlbBt2hCifpjr4A4oA3nGGy+6Zcwobk0NIy9RDBlW/0f45KS7iuGAhLLhdxQfQtSoZTyqSOZB6yiaouiGyhMu5BsERcsaZ2eoqb3qKREAajigakpSIVsIEyFq7uRLSiKBYExVwIMU1jMufKbAFXUpAJVhHGGrYX4kEkZGvsxLtEMJT68+bylpWlzJaPOVhb8fymswzpNwaL9KViFlMsRUCpczZtfWurQv2EhMBWKf0nkymqb+r4BmgolIClZ61Qa1pRsKiAByw2LT5k4YKrIFjiKyFE+eYGl6CqyBW4j50rZvH40Fe+z16Dm7C4+owwgyMzk4uJq+zV1dtH7n2h5v+T+1ohZsyImTYqMjPz394Sjwj6YBECAAQDEdK6BvrNtXwAAAABJRU5ErkJggg=='); height: 100%;width: 33px;background-repeat: no-repeat; background-position: center"></div>
+        <div>
+            <!--LiveInternet counter-->
+            <script type="text/javascript">
+                document.write("<a href='//www.liveinternet.ru/click' " +
+                    "target=_blank><img src='//counter.yadro.ru/hit?t57.2;r" +
+                    escape(document.referrer) + ((typeof(screen) == "undefined") ? "" :
+                        ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ?
+                        screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) +
+                    ";" + Math.random() +
+                    "' alt='' title='LiveInternet' " +
+                    "border='0' width='88' height='31'><\/a>")
+            </script>
+            <!--/LiveInternet--><br>
+            <!-- Rating@Mail.ru counter -->
+            <script type="text/javascript">
+                var _tmr = window._tmr || (window._tmr = []);
+                _tmr.push({id: "671640", type: "pageView", start: (new Date()).getTime()});
+                (function (d, w, id) {
+                    if (d.getElementById(id)) return;
+                    var ts = d.createElement("script");
+                    ts.type = "text/javascript";
+                    ts.async = true;
+                    ts.id = id;
+                    ts.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//top-fwz1.mail.ru/js/code.js";
+                    var f = function () {
+                        var s = d.getElementsByTagName("script")[0];
+                        s.parentNode.insertBefore(ts, s);
+                    };
+                    if (w.opera == "[object Opera]") {
+                        d.addEventListener("DOMContentLoaded", f, false);
+                    } else {
+                        f();
+                    }
+                })(document, window, "topmailru-code");
+            </script>
+            <noscript>&lt;div&gt;
+                &lt;img src="//top-fwz1.mail.ru/counter?id=671640;js=na"
+                style="border:0;position:absolute;left:-9999px;" alt="" /&gt;
+                &lt;/div&gt;
+            </noscript>
+            <!-- //Rating@Mail.ru counter -->
+            <!-- Rating@Mail.ru logo -->
+            <a href="//allsportlinks.com/go/mailru">
+                <img src="//top-fwz1.mail.ru/counter?id=671640;t=303;l=1" style="border:0;" height="15" width="88"
+                     alt="Рейтинг@Mail.ru"></a>
+            <!-- //Rating@Mail.ru logo -->
+        </div>
     </div>
-    <div class="column">
-        <span class="copyright">© AllSportLinks.com 2004—2018</span>
+    <div class="column info">
+        <span class="copyright">© 2004—2017 All Sports Links</span>
     </div>
 </footer>
 </body>

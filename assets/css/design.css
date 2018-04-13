@@ -1,4 +1,4 @@
-header {
+header > .line, header > .extra-line {
     background-color: #f8e470;
 }
 
@@ -205,4 +205,17 @@ footer {
     border-top-color: #090;
     color: #666;
     font-size: 80%;
+}
+
+/* Common */
+
+a.red:link, a.red:visited {
+    color: #F00;
+}
+
+a.dotted {
+    text-decoration: none;
+    border-bottom-width: 1px;
+    border-bottom-style: dotted;
+    border-bottom-color: #999;
 }
