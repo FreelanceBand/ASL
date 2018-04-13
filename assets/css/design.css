@@ -213,6 +213,10 @@ a.red:link, a.red:visited {
     color: #F00;
 }
 
+a.blue:link, a.blue:visited {
+    color: #03F;
+}
+
 a.dotted {
     text-decoration: none;
     border-bottom-width: 1px;
