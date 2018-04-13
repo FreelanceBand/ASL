@@ -11,7 +11,8 @@ html, body {
 }
 
 h1, h2, h3 {
-    padding: 10px;
+    padding: 0 10px;
+    margin: 20px 0;
     font-weight: normal;
 }
 
@@ -20,7 +21,7 @@ header {
     display: flex;
     flex-direction: column;
     position: relative;
-    padding: 10px;
+
 }
 
 header > .line, header > .extra-line {
@@ -33,8 +34,66 @@ header figure {
     padding: 0;
 }
 
-aside.menu {
-    display: none;
+.menu {
+    position: fixed;
+    left: 0;
+    /*top: 0;*/
+    max-width: 100vw;
+    height: calc(100vh - 60px);
+    z-index: 10000;
+}
+
+.menu > .backdrop {
+    display: block;
+    color: transparent;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    left: 0;
+    top: 60px;
+    height: calc(100vh - 60px);
+    z-index: 9000;
+    cursor: default;
+}
+
+.menu > ul {
+    position: relative;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    list-style: none;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 80%;
+    /*color: #999;*/
+    /*line-height: 26px;*/
+    background: white;
+    z-index: 11000;
+    min-width: 250px;
+    user-select: none;
+    -webkit-overflow-scrolling: touch;
+}
+
+.menu > ul > li {
+    /*font-size: 80%;*/
+    color: #999;
+    line-height: 26px;
+    margin: 0em;
+    padding: 0px;
+    width: 100%;
+}
+
+.menu > ul > li > * {
+    text-decoration: none;
+    display: block;
+    padding-left: 10px;
+    padding-top: 2px;
+    padding-bottom: 0px;
+}
+
+.menu h4 {
+    font-size: 1.17em;
+    font-weight: normal;
 }
 
 main {
@@ -44,7 +103,9 @@ main {
 }
 
 main > h1 {
-    margin: 10px 0;
+    margin: 11px 0;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 .page-sections-links {
@@ -58,11 +119,14 @@ main > h1 {
     margin-bottom: 6px;
     padding: 2px 6px;
     margin-right: 5px;
+    padding-top: 4px;
 }
 
 main > section > h2 {
     margin-top: 20px;
     margin-bottom: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 main > section > .links-list, main > section > .links-grid, main > section > .links-grid ul {
@@ -79,6 +143,10 @@ main > section > .links-list > li, main > section > .links-grid ul > li {
     padding-right: 10px;
 }
 
+main > section > .links-list > li:last-child, main > section > .links-grid ul > li:last-child {
+    border-bottom: none;
+}
+
 main > section > .links-list > li > span, main > section > .links-grid ul > li > span {
     display: block;
     padding-top: 6px;
@@ -86,13 +154,13 @@ main > section > .links-list > li > span, main > section > .links-grid ul > li >
 }
 
 footer {
-    padding: 10px;
+    padding: 0 10px;
     border-top: 1px solid;
     margin-top: 10px;
 }
 
 footer a, footer .copyright {
-    line-height: 2em;
+    line-height: 2.4em;
 }
 
 /* Common */
@@ -110,4 +178,46 @@ footer a, footer .copyright {
 .column {
     display: flex;
     flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hide-on-mobile {
+    display: none !important;
+}
+
+body:target {
+    overflow: hidden;
+}
+
+body:target .menu {
+    display: block !important;
+}
+
+body:target .menu-button {
+    display: none;
+}
+
+body:not(:target) .menu-close-button {
+    display: none;
+}
+
+@media all and (max-width: 450px) {
+    .menu {
+        width: 100vw;
+    }
+
+    .menu > ul {
+        padding: 40px;
+    }
+}
+
+@media all and (max-width: 350px) {
+
+    .menu > ul {
+        padding: 20px;
+    }
 }

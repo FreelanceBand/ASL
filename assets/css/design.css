@@ -84,29 +84,27 @@ header {
     left: 8px;
 }*/
 
-.menu-button {
+.menu-button, .menu-close-button {
     color: transparent;
     background: url('../images/menu.svg') no-repeat center;
     background-size: auto;
     height: 100%;
     width: 40px;
-    padding: 0 10px;
+    /*padding: 0 10px;*/
+    padding: 12px 32px;
+    user-select: none;
+}
+
+.menu-close-button {
+    background: url('../images/close.svg') no-repeat center;
 }
 
 .logo-section {
     height: 100%;
-    width: 150px;
+    width: 107px;
     color: transparent;
     background: url("../images/logo.png") no-repeat center;
     background-size: auto;
-}
-
-header > .extra-line {
-    display: none;
-}
-
-main > .sub-menu {
-    display: none;
 }
 
 main > h1 {
@@ -114,10 +112,6 @@ main > h1 {
     background-color: #090;
     color: #FFF;
     font-size: 100%;
-}
-
-main > hr {
-    display: none;
 }
 
 .page-sections-links > a {
@@ -136,12 +130,12 @@ main > hr {
     content: "#";
     position: absolute;
     display: inline-block;
-    top: calc((100% - 1.4rem) / 2);
+    top: calc((100% - 1.3rem - 5px) / 2);
     left: 5px;
     height: 100%;
     /*font-style: italic;*/
     font-weight: 900;
-    font-size: 1.4em;
+    font-size: 1.3em;
 }
 
 main > section > h2 {
@@ -158,6 +152,15 @@ main > section > .links-list {
 main > section > .links-list > li, main > section > .links-grid ul > li {
     position: relative;
     border-bottom-color: #E7E7E7;
+}
+
+main > section > .links-list > li > img, main > section > .links-grid ul > li > img {
+    width: 16px;
+    height: 16px;
+    border: none;
+    object-fit: contain;
+    margin-right: 8px;
+    user-select: none;
 }
 
 main > section > .links-list > li > a, main > section > .links-grid ul > li > a {
@@ -181,6 +184,9 @@ main > section > .links-list > li.desktop-only:after, main > section > .links-gr
     right: 10px;
     font-size: 80%;
     color: #999;
+    padding-left: 20px;
+    background: url("../images/desktop.svg") no-repeat center left;
+    user-select: none;
 }
 
 main > section > ul h3 {

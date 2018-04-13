@@ -6,3 +6,15 @@ main > section > .links-list > li > span:before {
     content: '—';
     margin-right: 10px;
 }
+
+.hide-on-mobile {
+    display: inherit !important;
+}
+
+.hide-on-desktop {
+    display: none !important;
+}
+
+.menu h4 {
+    display: none;
+}
