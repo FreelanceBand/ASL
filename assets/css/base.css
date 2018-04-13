@@ -191,6 +191,7 @@ footer a, footer .copyright {
 
 body:target {
     overflow: hidden;
+    position: fixed;
 }
 
 body:target .menu {
