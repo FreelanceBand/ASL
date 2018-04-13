@@ -239,6 +239,7 @@ main > section > .links-grid > li > h3 > img {
 main > section > h3 {
     font-size: 1.1em;
     margin: 18px 0 8px 0;
+    padding-left: 0;
 }
 
 .menu h4 {
@@ -316,6 +317,7 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     border-top-color: #CCC;
+    font-size: 11px;
 }
 
 footer .social-links {
