@@ -192,6 +192,9 @@ footer a, footer .copyright {
 body:target {
     overflow: hidden;
     position: fixed;
+    margin: 0;
+    height: 100%;
+    touch-action: none;
 }
 
 body:target .menu {
