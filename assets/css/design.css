@@ -1,0 +1,202 @@
+header {
+    background-color: #f8e470;
+}
+
+/*.menu-button {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    margin: 0px auto;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+.menu-button span {
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: #d3531a;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+
+.menu-button span:nth-child(1) {
+    top: 0px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+}
+
+.menu-button span:nth-child(2) {
+    top: 18px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+}
+
+.menu-button:focus span:nth-child(3) {
+    top: 36px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+}
+
+.menu-button:focus span:nth-child(1) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: -3px;
+    left: 8px;
+}
+
+.menu-button:focus span:nth-child(2) {
+    width: 0%;
+    opacity: 0;
+}
+
+.menu-button:focus span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: 39px;
+    left: 8px;
+}*/
+
+.menu-button {
+    color: transparent;
+    background: url('../images/menu.svg') no-repeat center;
+    background-size: auto;
+    height: 100%;
+    width: 40px;
+    padding: 0 10px;
+}
+
+.logo-section {
+    height: 100%;
+    width: 150px;
+    color: transparent;
+    background: url("../images/logo.png") no-repeat center;
+    background-size: auto;
+}
+
+header > .extra-line {
+    display: none;
+}
+
+main > .sub-menu {
+    display: none;
+}
+
+main > h1 {
+    font-weight: bold;
+    background-color: #090;
+    color: #FFF;
+    font-size: 100%;
+}
+
+main > hr {
+    display: none;
+}
+
+.page-sections-links > a {
+    position: relative;
+    display: inline-block;
+    line-height: 1.9em;
+    font-size: 14px;
+    color: #0835FE;
+    background: #E6F5FF;
+    border-radius: 5px;
+    text-decoration: none;
+    padding-left: 20px;
+}
+
+.page-sections-links > a:before {
+    content: "#";
+    position: absolute;
+    display: inline-block;
+    top: calc((100% - 1.4rem) / 2);
+    left: 5px;
+    height: 100%;
+    /*font-style: italic;*/
+    font-weight: 900;
+    font-size: 1.4em;
+}
+
+main > section > h2 {
+    background-color: antiquewhite;
+    font-weight: normal;
+    font-size: 100%;
+}
+
+main > section > .links-list {
+    font-size: 100%;
+    color: #333;
+}
+
+main > section > .links-list > li, main > section > .links-grid ul > li {
+    position: relative;
+    border-bottom-color: #E7E7E7;
+}
+
+main > section > .links-list > li > a, main > section > .links-grid ul > li > a {
+    color: #00F;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+main > section > .links-list > li > a:hover, main > section > .links-grid ul > li > a:hover {
+    background-color: #EFF2FB;
+}
+
+main > section > .links-list > li > span, main > section > .links-grid ul > li > span {
+    font-size: 90%;
+}
+
+main > section > .links-list > li.desktop-only:after, main > section > .links-grid ul > li.desktop-only:after {
+    content: 'Полная версия';
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 80%;
+    color: #999;
+}
+
+main > section > ul h3 {
+    font-size: 100%;
+}
+
+main > section > ul h3.icon:before {
+    display: none;
+}
+
+main > section > h3 {
+    font-size: 100%;
+}
+
+footer {
+    border-top-color: #090;
+    color: #666;
+    font-size: 80%;
+}

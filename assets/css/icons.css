@@ -1,0 +1,15 @@
+.icon:before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background: no-repeat center;
+}
+
+.icon.england:before {
+    background: url("../images/flags/4x3/gb.svg");
+}
+
+.icon.germany:before {
+    background: url("../images/flags/4x3/de.svg");
+}

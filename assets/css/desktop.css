@@ -1,0 +1,8 @@
+main > section > .links-list > li > span {
+    margin-left: 10px;
+}
+
+main > section > .links-list > li > span:before {
+    content: '—';
+    margin-right: 10px;
+}
